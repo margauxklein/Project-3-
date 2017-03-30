@@ -207,19 +207,6 @@ twitter_info_diction = {}
 for x in screen_names:
 	twitter_info_diction[x] = description_text2
 
-# import collections
-
-# query = "SELECT tweet_text from Tweets WHERE Tweets.user_id = (SELECT user_id from Users where screen_name = ?)"
-
-# twitter_info_diction = collections.defaultdict()
-# for sName in screen_names:
-#     twitter_info_diction[sName] = [tup[0] for tup in cur.execute(query, (sName)).fetchall()]
-
-# query = 'SELECT screen_name, description FROM Users INNER JOIN Tweets'
-# tups = cur.execute(query).fetchall()
-# twitter_info_diction = {}
-# for k, v in tups:
-# 	twitter_info_diction[k].append(v)
 
 ### IMPORTANT: MAKE SURE TO CLOSE YOUR DATABASE CONNECTION AT THE END OF THE FILE HERE SO YOU DO NOT LOCK YOUR DATABASE (it's fixable, but it's a pain). ###
 
