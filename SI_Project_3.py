@@ -35,7 +35,6 @@ api = tweepy.API(auth, parser=tweepy.parsers.JSONParser())
 ##### END TWEEPY SETUP CODE
 
 ## Task 1 - Gathering data
-
 ## Define a function called get_user_tweets that gets at least 20 Tweets from a specific Twitter user's timeline, and uses caching. The function should return a Python object representing the data that was retrieved from Twitter. (This may sound familiar...) We have provided a CACHE_FNAME variable for you for the cache file name, but you must write the rest of the code in this file.
 
 CACHE_FNAME = "SI206_project3_cache.json"
